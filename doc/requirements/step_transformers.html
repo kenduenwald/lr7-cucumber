@@ -1,0 +1,3859 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Step Definitions and Transforms
+  
+    &mdash; Documentation by YARD 0.9.9
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/cucumber.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  pathId = "requirements::step_transformers";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/cucumber.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (s)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../requirements.html" title="requirements (requirements)">requirements</a></span></span>
+     &raquo; 
+    <span class="title">step_transformers</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="feature_list_link"
+        href="../feature_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div class="requirements">
+  <div class="title">Step Definitions &amp; Transforms</div>
+
+  <div class="summary">
+    <div>47<a href="#step_definitions">Step Definitions</a></div>
+    <div>0<a href="#step_transforms">Step Transforms</a></div>
+    <div>0<a href="#undefined_steps">Undefined Steps</a></div>
+  </div>
+
+</div><div class="title">
+  
+     <a class="control" id="stepdefinition">[Collapse All]</a>
+     <div style="clear: right;"></div>
+   
+ 
+  
+    <a name="step_definitions">
+  
+  <div class="name">Step Definitions</div>
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition26-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" link$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+link$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:4</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the link by label</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">4
+5
+6</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; link$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//a[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]|//a/span[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I click the "<span class='match'>Sign In</span>" link
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:6</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I click the "<span class='match'>Edit</span>" link
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition6-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I enter "([^\"]*)" into the "([^\"]*)" input field$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+%22([%5E%5C%22]*)%22+into+the+%22([%5E%5C%22]*)%22+input+field$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:38</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>enter text into input field steps</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">38
+39
+40
+41</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter &quot;([^\&quot;]*)&quot; into the &quot;([^\&quot;]*)&quot; input field$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_clear_text'><span class='object_link'><a href="../top-level-namespace.html#clear_text-instance_method" title="#clear_text (method)">clear_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//dt[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::dd/div/input|//label[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::input|//input[@title=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39; or @name=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]|//*[@class=&#39;testray-data-header&#39; and text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::div/div/*</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_enter_text'><span class='object_link'><a href="../top-level-namespace.html#enter_text-instance_method" title="#enter_text (method)">enter_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//dt[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::dd/div/input|//label[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::input|//input[@title=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39; or @name=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]|//*[@class=&#39;testray-data-header&#39; and text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::div/div/*</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I enter "<span class='match'>test@liferay.com</span>" into the "<span class='match'>Email Address</span>" input field
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:7</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I enter "<span class='match'>rest</span>" into the "<span class='match'>Password</span>" input field
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:8</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition28-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" button$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+button$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:14</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the button</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">14
+15
+16</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; button$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//*[contains(@class,&#39;btn&#39;)]/*[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I click the "<span class='match'>Sign In</span>" button
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:10</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I click the "<span class='match'>Publish</span>" button
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:14</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition44-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I (un)?check the "([^"]*)" checkbox$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+(un)%3Fcheck+the+%22([%5E%22]*)%22+checkbox$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:111</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>Click a checkbox</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">111
+112
+113
+114</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I (un)?check the &quot;([^&quot;]*)&quot; checkbox$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_uncheck'>uncheck</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_e'>e</span> <span class='op'>=</span> <span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='symbol'>:xpath</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//input[@type=&#39;checkbox&#39;]/following-sibling::text()[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/preceding-sibling::input</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_uncheck'>uncheck</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>un</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='kw'>false</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_e'>e</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I check the "<span class='match'>Remember Me</span>" checkbox
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:9</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition22-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I open the browser to "(.*?)"$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+open+the+browser+to+%22(%2E*%3F)%22$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/navigation_steps.rb:4</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>open a page to a given url</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I open the browser to &quot;(.*?)&quot;$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+	<span class='const'>Capybara</span><span class='period'>.</span><span class='id identifier rubyid_current_driver'>current_driver</span> <span class='op'>=</span> <span class='symbol'>:selenium_chrome</span>
+	<span class='const'>Capybara</span><span class='period'>.</span><span class='id identifier rubyid_app_host'>app_host</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+	
+	<span class='id identifier rubyid_dest_url'>dest_url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+	
+	<span class='id identifier rubyid_visit'>visit</span><span class='lparen'>(</span><span class='id identifier rubyid_dest_url'>dest_url</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_attempts'>attempts</span> <span class='op'>=</span> <span class='int'>1</span>
+	<span class='kw'>unless</span> <span class='id identifier rubyid_assert_current_path'>assert_current_path</span><span class='lparen'>(</span><span class='id identifier rubyid_dest_url'>dest_url</span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='label'>url:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>wait:</span> <span class='int'>3</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+		<span class='kw'>if</span> <span class='id identifier rubyid_attempts'>attempts</span> <span class='op'>&gt;=</span> <span class='int'>5</span>
+			<span class='kw'>break</span>
+		<span class='kw'>else</span>
+			<span class='id identifier rubyid_visit'>visit</span><span class='lparen'>(</span><span class='id identifier rubyid_dest_url'>dest_url</span><span class='rparen'>)</span>
+			<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Browser failed to open. On attempt: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_attempts'>attempts</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+			<span class='id identifier rubyid_attempts'>attempts</span> <span class='op'>+=</span> <span class='int'>1</span>
+		<span class='kw'>end</span>
+	<span class='kw'>end</span>	
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I open the browser to "<span class='match'>http://localhost:9080/</span>"
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:5</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition1-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I enter "([^\"]*)" into the rich text editor$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+%22([%5E%5C%22]*)%22+into+the+rich+text+editor$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:4</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>input text into an alloy editor</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">4
+5
+6</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter &quot;([^\&quot;]*)&quot; into the rich text editor$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='op'>|</span>
+    <span class='id identifier rubyid_enter_text'><span class='object_link'><a href="../top-level-namespace.html#enter_text-instance_method" title="#enter_text (method)">enter_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[@title=&#39;Rich Text Editor&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I enter "<span class='match'>Test test test test test test</span>" into the rich text editor
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:13</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition11-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the default avatar displaying "([^\"]*)"$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+default+avatar+displaying+%22([%5E%5C%22]*)%22$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:14</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check if the default portrait is the proper initials</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">14
+15
+16
+17
+18</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the default avatar displaying &quot;([^\&quot;]*)&quot;$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_using_wait_time'>using_wait_time</span> <span class='int'>4</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//span[@class=&#39;user-avatar-image&#39;]/div/span[text()=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should<span class='match'></span> see the default avatar displaying "<span class='match'>TT</span>"
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:11</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition9-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see "([^\"]*)" in the wiki content$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+%22([%5E%5C%22]*)%22+in+the+wiki+content$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:4</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check if text exists on the wiki content</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">4
+5
+6</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see &quot;([^\&quot;]*)&quot; in the wiki content$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[@class=&#39;wiki-body&#39;]/p[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should<span class='match'></span> see "<span class='match'>Test test test test test test</span>" in the wiki content
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/test.html">features/test.feature:15</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition12-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the following in the description list$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+following+in+the+description+list$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:21</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>assert multiple terms and names on a description list &lt;dl&gt; &lt;dt&gt;
+&lt;dd&gt;</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">21
+22
+23
+24
+25</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the following in the description list$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_table'>table</span><span class='op'>|</span>
+  <span class='id identifier rubyid_table'>table</span><span class='period'>.</span><span class='id identifier rubyid_raw'>raw</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_term'>access_term</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+      <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[@class=&#39;testray-data-section&#39;]/descendant::*[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_term'>access_term</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::*/descendant-or-self::*[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39; or text()=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition13-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the following options in the "([^\"]*)" multiselect$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+following+options+in+the+%22([%5E%5C%22]*)%22+multiselect$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:28</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>assert multiple options in a multi select drop down targeted by label</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">28
+29
+30
+31
+32
+33
+34
+35
+36</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the following options in the &quot;([^\&quot;]*)&quot; multiselect$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='comma'>,</span> <span class='id identifier rubyid_table'>table</span><span class='op'>|</span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_table'>table</span><span class='period'>.</span><span class='id identifier rubyid_raw'>raw</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_rowdata'>rowdata</span><span class='op'>|</span>
+    <span class='id identifier rubyid_rowdata'>rowdata</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_entry'>entry</span><span class='op'>|</span>
+      <span class='id identifier rubyid_option'>option</span> <span class='op'>=</span> <span class='id identifier rubyid_entry'>entry</span>
+        <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//label[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::select/option[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_option'>option</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;][1]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition14-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see "([^\"]*)" in a table$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+%22([%5E%5C%22]*)%22+in+a+table$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:39</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check that a table contains a certain text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">39
+40
+41</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see &quot;([^\&quot;]*)&quot; in a table$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//td[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)])[1]|//td/a[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition15-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the "([^\"]*)" option in a drop down$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+%22([%5E%5C%22]*)%22+option+in+a+drop+down$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:44</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check that an option exists somewhere</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">44
+45
+46</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the &quot;([^\&quot;]*)&quot; option in a drop down$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//option[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)])[1]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition16-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the "([^\"]*)" option selected in the "([^\"]*)" drop down$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+%22([%5E%5C%22]*)%22+option+selected+in+the+%22([%5E%5C%22]*)%22+drop+down$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:49</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check that an option is currently selected in a drop down</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">49
+50
+51</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the &quot;([^\&quot;]*)&quot; option selected in the &quot;([^\&quot;]*)&quot; drop down$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_option'>option</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//label[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::select/*/option[contains(@selected,&#39;&#39;) and text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_option'>option</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;])[1]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition17-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the "([^\"]*)" environment selected in the "([^\"]*)" drop down$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+%22([%5E%5C%22]*)%22+environment+selected+in+the+%22([%5E%5C%22]*)%22+drop+down$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:54</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check that an environment is currently selected in the options drop
+down</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">54
+55
+56</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the &quot;([^\&quot;]*)&quot; environment selected in the &quot;([^\&quot;]*)&quot; drop down$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_option'>option</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//input[@value=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]/following-sibling::*//option[contains(@selected,&#39;&#39;) and text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_option'>option</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;])[1]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition18-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see that the pagination text contains "([^\"]*)"$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+that+the+pagination+text+contains+%22([%5E%5C%22]*)%22$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:59</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check the text for the total number for pagination items</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">59
+60
+61</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see that the pagination text contains &quot;([^\&quot;]*)&quot;$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//small[contains(.,&#39;Showing 1 - 20 of&#39;)])[1]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition19-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see "([^\"]*)" in the breadcrumb$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+%22([%5E%5C%22]*)%22+in+the+breadcrumb$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:64</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check that the breadcrumb contains a specific text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">64
+65
+66</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see &quot;([^\&quot;]*)&quot; in the breadcrumb$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_expected_value'>expected_value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_partial_text'><span class='object_link'><a href="../top-level-namespace.html#check_element_partial_text-instance_method" title="#check_element_partial_text (method)">check_element_partial_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_expected_value'>expected_value</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//span[@class=&#39;breadcrumb-display-container&#39;])[1]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition20-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see "([^\"]*)" in the modal title$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+%22([%5E%5C%22]*)%22+in+the+modal+title$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:69</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check that the modal title is a specific text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">69
+70
+71
+72
+73</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see &quot;([^\&quot;]*)&quot; in the modal title$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_switch_to_main_content'><span class='object_link'><a href="../top-level-namespace.html#switch_to_main_content-instance_method" title="#switch_to_main_content (method)">switch_to_main_content</a></span></span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//h3[text()=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_switch_to_focused_iframe'><span class='object_link'><a href="../top-level-namespace.html#switch_to_focused_iframe-instance_method" title="#switch_to_focused_iframe (method)">switch_to_focused_iframe</a></span></span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition21-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see an? (success|error) alert$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+an%3F+(success%7Cerror)+alert$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:76</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check for the presence of a success or error alert notification</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">76
+77
+78
+79
+80
+81</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see an? (success|error) alert$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_expected_response'>expected_response</span><span class='op'>|</span>
+    <span class='id identifier rubyid_within'>within</span><span class='lparen'>(</span><span class='symbol'>:xpath</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//*[@class=&#39;lfr-alert-container&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_expected_response'>expected_response</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>success</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='id identifier rubyid_access_name'>access_name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>success</span><span class='tstring_end'>&#39;</span></span> <span class='op'>:</span> <span class='id identifier rubyid_access_name'>access_name</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>danger</span><span class='tstring_end'>&#39;</span></span>
+        <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//*[contains(@class,&#39;alert-</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition23-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I switch to the main frame$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+switch+to+the+main+frame$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/navigation_steps.rb:25</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to switch to main content</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">25
+26
+27</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I switch to the main frame$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_switch_to_main_content'><span class='object_link'><a href="../top-level-namespace.html#switch_to_main_content-instance_method" title="#switch_to_main_content (method)">switch_to_main_content</a></span></span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition24-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I switch to the focused modal$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+switch+to+the+focused+modal$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/navigation_steps.rb:30</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to switch to a modal</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">30
+31
+32</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I switch to the focused modal$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_switch_to_focused_iframe'><span class='object_link'><a href="../top-level-namespace.html#switch_to_focused_iframe-instance_method" title="#switch_to_focused_iframe (method)">switch_to_focused_iframe</a></span></span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition25-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I refresh the page$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+refresh+the+page$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/navigation_steps.rb:35</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to refresh page</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">35
+36
+37</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I refresh the page$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_page'>page</span><span class='period'>.</span><span class='id identifier rubyid_evaluate_script'>evaluate_script</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>window.location.reload()</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition27-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the drop down on the table row containing "(.*?)"$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+drop+down+on+the+table+row+containing+%22(%2E*%3F)%22$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:9</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the actions drop down on a table row when it contains partial text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">9
+10
+11</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the drop down on the table row containing &quot;(.*?)&quot;$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//tr[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/td//a[contains(@class,&#39;dropdown-toggle&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition29-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the filter button$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+filter+button$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:19</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the button</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">19
+20
+21</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the filter button$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//*[@id=&#39;priorityFilterToggle&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'># Click filter button
+</span><span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition30-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the checkbox on the table row containing "([^\"]*)"$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+checkbox+on+the+table+row+containing+%22([%5E%5C%22]*)%22$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:24</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the checkbox in a table</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">24
+25
+26</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the checkbox on the table row containing &quot;([^\&quot;]*)&quot;$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//td[contains(., &#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/preceding-sibling::*//input[@type=&#39;checkbox&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_visible_flag'>visible_flag</span> <span class='op'>=</span> <span class='kw'>false</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition31-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" drop down button$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+drop+down+button$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:29</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the drop down button</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">29
+30
+31
+32
+33
+34
+35
+36</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; drop down button$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_sleep'>sleep</span><span class='lparen'>(</span><span class='int'>1</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//a[contains(@class,&#39;dropdown-toggle&#39;)]/span[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]|//a[contains(@class,&#39;dropdown-toggle&#39;) and text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  
+  <span class='id identifier rubyid_using_wait_time'>using_wait_time</span> <span class='int'>4</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_expect'>expect</span><span class='lparen'>(</span><span class='id identifier rubyid_page'>page</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to'>to</span> <span class='id identifier rubyid_have_xpath'>have_xpath</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[contains(@class,&#39;open&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition32-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click "(.*?)" in a table$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+%22(%2E*%3F)%22+in+a+table$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:39</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the first item in a row that contains partial text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">39
+40
+41
+42
+43</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click &quot;(.*?)&quot; in a table$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_using_wait_time'>using_wait_time</span> <span class='int'>4</span> <span class='kw'>do</span>
+      <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>(//tr//*[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;])[1]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition33-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" context menu option$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+context+menu+option$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:46</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the item in context menu</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">46
+47
+48
+49
+50</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; context menu option$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_using_wait_time'>using_wait_time</span> <span class='int'>4</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//li[@class=&#39;testray-menu-item&#39;]/a[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition34-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" arrow button$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+arrow+button$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:53</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the left or right button for multi selections</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">53
+54
+55
+56
+57
+58
+59</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; arrow button$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_arrow_button'>arrow_button</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_arrow_button'>arrow_button</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>left</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//button[contains(@class,&#39;move-right&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_arrow_button'>arrow_button</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>right</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//button[contains(@class,&#39;move-left&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition35-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click "([^\"]*)" in the breadcrumb$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+%22([%5E%5C%22]*)%22+in+the+breadcrumb$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:62</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the node in the breadcrumb navigation</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">62
+63
+64</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click &quot;([^\&quot;]*)&quot; in the breadcrumb$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[@class=&#39;breadcrumb-container&#39;]/a[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition36-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" option$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+option$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:67</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the option in the actions drop down when it contains partial text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">67
+68
+69</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; option$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//li/a[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition37-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" tab$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+tab$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:72</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the tab</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">72
+73
+74</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; tab$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+  <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//li[@class=&#39;tab&#39;]/a[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition38-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I close the focused modal$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+close+the+focused+modal$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:77</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click the x to close the focused modal</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">77
+78
+79
+80</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I close the focused modal$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_switch_to_main_content'><span class='object_link'><a href="../top-level-namespace.html#switch_to_main_content-instance_method" title="#switch_to_main_content (method)">switch_to_main_content</a></span></span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//button[contains(.,&#39;×&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition39-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click "(.*?)" in the sidebar$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+%22(%2E*%3F)%22+in+the+sidebar$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:83</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click an item in the sidebar</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">83
+84
+85
+86</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click &quot;(.*?)&quot; in the sidebar$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//*[@id=&#39;sidebar&#39;]/descendant::a[@title=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='comment'># click(&quot;xpath&quot;, &quot;//div[@class=&#39;testray-sidebar-content&#39;]//span[@class=&#39;testray-sidebar-text&#39; and text()=&#39;#{access_name}&#39;]/preceding-sibling::span[@class=&#39;testray-sidebar-icon&#39;]&quot;)
+</span><span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition40-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "(.*?)" option in the manage menu$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22(%2E*%3F)%22+option+in+the+manage+menu$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:89</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>click an item in the manage menu</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">89
+90
+91</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;(.*?)&quot; option in the manage menu$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//li[@class=&#39;testray-menu-item&#39;]//span[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]|//li[@class=&#39;testray-menu-item&#39;]//span[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition41-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I right click "(.*?)" in a table$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+right+click+%22(%2E*%3F)%22+in+a+table$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:94</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>right click the first item in a row that contains partial text</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">94
+95
+96
+97
+98</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I right click &quot;(.*?)&quot; in a table$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_using_wait_time'>using_wait_time</span> <span class='int'>4</span> <span class='kw'>do</span>
+        <span class='id identifier rubyid_context_click'><span class='object_link'><a href="../top-level-namespace.html#context_click-instance_method" title="#context_click (method)">context_click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//tr//a[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]|//td[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition42-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the manage page drop down/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+manage+page+drop+down%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:101</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>Click the page specific options dropdown</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">101
+102
+103</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the manage page drop down</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[@class=&#39;dropdown manage-page-dropdown&#39;]/a</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition43-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I click the "([^"]*)" option in the manage page menu$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+click+the+%22([%5E%22]*)%22+option+in+the+manage+page+menu$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:106</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>Click an option in the page specific options menu</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">106
+107
+108</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I click the &quot;([^&quot;]*)&quot; option in the manage page menu$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_click'><span class='object_link'><a href="../top-level-namespace.html#click-instance_method" title="#click (method)">click</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//div[@class=&#39;dropdown manage-page-dropdown open&#39;]/descendant::span[normalize-space(text())=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition45-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I (un)?select the following from the "([^"]*)" multiselect$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+(un)%3Fselect+the+following+from+the+%22([%5E%22]*)%22+multiselect$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/click_elements_steps.rb:118</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>Table format:  | Filter Param | One option per table row</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">118
+119
+120
+121
+122</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I (un)?select the following from the &quot;([^&quot;]*)&quot; multiselect$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_unselect'>unselect</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='comma'>,</span> <span class='id identifier rubyid_table'>table</span><span class='op'>|</span>
+    <span class='id identifier rubyid_table'>table</span><span class='period'>.</span><span class='id identifier rubyid_rows'>rows</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_row'>row</span><span class='op'>|</span>
+        <span class='id identifier rubyid_unselect'>unselect</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>un</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='id identifier rubyid_unselect_from_multiselect'><span class='object_link'><a href="../top-level-namespace.html#unselect_from_multiselect-instance_method" title="#unselect_from_multiselect (method)">unselect_from_multiselect</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_access_name'>access_name</span><span class='comma'>,</span> <span class='id identifier rubyid_row'>row</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_select_from_multiselect'><span class='object_link'><a href="../top-level-namespace.html#select_from_multiselect-instance_method" title="#select_from_multiselect (method)">select_from_multiselect</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_access_name'>access_name</span><span class='comma'>,</span> <span class='id identifier rubyid_row'>row</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition46-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I accept the alert$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+accept+the+alert$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/javascript_handling_steps.rb:3</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">3
+4
+5</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I accept the alert$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_handle_alert'><span class='object_link'><a href="../top-level-namespace.html#handle_alert-instance_method" title="#handle_alert (method)">handle_alert</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>accept</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition47-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I dismiss the alert$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+dismiss+the+alert$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/javascript_handling_steps.rb:7</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">7
+8
+9</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I dismiss the alert$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_handle_alert'><span class='object_link'><a href="../top-level-namespace.html#handle_alert-instance_method" title="#handle_alert (method)">handle_alert</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>dismiss</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition2-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I select the following options from the "([^\"]*)" multiselect$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+select+the+following+options+from+the+%22([%5E%5C%22]*)%22+multiselect$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:9</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>select many options from a multi select by the drop down label</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">9
+10
+11
+12
+13
+14
+15
+16
+17</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I select the following options from the &quot;([^\&quot;]*)&quot; multiselect$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='comma'>,</span> <span class='id identifier rubyid_table'>table</span><span class='op'>|</span>
+    <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_table'>table</span><span class='period'>.</span><span class='id identifier rubyid_raw'>raw</span>
+    <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_rowdata'>rowdata</span><span class='op'>|</span>
+        <span class='id identifier rubyid_rowdata'>rowdata</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_entry'>entry</span><span class='op'>|</span>
+            <span class='id identifier rubyid_option'>option</span> <span class='op'>=</span> <span class='id identifier rubyid_entry'>entry</span>
+            <span class='id identifier rubyid_select_option_from_dropdown'><span class='object_link'><a href="../top-level-namespace.html#select_option_from_dropdown-instance_method" title="#select_option_from_dropdown (method)">select_option_from_dropdown</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//label[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::select</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_option'>option</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='kw'>end</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition3-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I select the following options$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+select+the+following+options$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:20</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>select a full environment stack using the drop down label</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">20
+21
+22
+23
+24</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I select the following options$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_table'>table</span><span class='op'>|</span>
+    <span class='id identifier rubyid_table'>table</span><span class='period'>.</span><span class='id identifier rubyid_raw'>raw</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_access_name'>access_name</span><span class='comma'>,</span> <span class='id identifier rubyid_access_option'>access_option</span><span class='op'>|</span>
+        <span class='id identifier rubyid_select_option_from_dropdown'><span class='object_link'><a href="../top-level-namespace.html#select_option_from_dropdown-instance_method" title="#select_option_from_dropdown (method)">select_option_from_dropdown</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//label[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::select</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_option'>access_option</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition4-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I select the "([^\"]*)" option from the "([^\"]*)" drop down$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+select+the+%22([%5E%5C%22]*)%22+option+from+the+%22([%5E%5C%22]*)%22+drop+down$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:27</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>select options from drop down by label</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">27
+28
+29</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I select the &quot;([^\&quot;]*)&quot; option from the &quot;([^\&quot;]*)&quot; drop down$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_option'>option</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_select_option_from_dropdown'><span class='object_link'><a href="../top-level-namespace.html#select_option_from_dropdown-instance_method" title="#select_option_from_dropdown (method)">select_option_from_dropdown</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//label[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::select | //select[@title=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;] | //input[@value=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]/following-sibling::*//select | //optgroup[@label=&#39;Project&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_option'>option</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition5-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I enter "([^\"]*)" in the search bar$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+%22([%5E%5C%22]*)%22+in+the+search+bar$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:32</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>enter text into the search bar steps</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">32
+33
+34
+35</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter &quot;([^\&quot;]*)&quot; in the search bar$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='op'>|</span>
+    <span class='id identifier rubyid_clear_text'><span class='object_link'><a href="../top-level-namespace.html#clear_text-instance_method" title="#clear_text (method)">clear_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//input[contains(@title, &#39;Search&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_enter_text'><span class='object_link'><a href="../top-level-namespace.html#enter_text-instance_method" title="#enter_text (method)">enter_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//input[contains(@title, &#39;Search&#39;)]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition7-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I enter "([^\"]*)" into the "([^\"]*)" date field$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+%22([%5E%5C%22]*)%22+into+the+%22([%5E%5C%22]*)%22+date+field$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:44</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>enter text into date field steps</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">44
+45
+46
+47</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter &quot;([^\&quot;]*)&quot; into the &quot;([^\&quot;]*)&quot; date field$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_clear_text'><span class='object_link'><a href="../top-level-namespace.html#clear_text-instance_method" title="#clear_text (method)">clear_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//span[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::*//input|//label[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::input</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_enter_text'><span class='object_link'><a href="../top-level-namespace.html#enter_text-instance_method" title="#enter_text (method)">enter_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//span[text()=&#39; </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'> &#39;]/following-sibling::*//input|//label[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::input</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition8-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I enter "([^\"]*)" into the "([^\"]*)" text area$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+%22([%5E%5C%22]*)%22+into+the+%22([%5E%5C%22]*)%22+text+area$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/input_steps.rb:50</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>enter text into text area steps</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">50
+51
+52
+53</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter &quot;([^\&quot;]*)&quot; into the &quot;([^\&quot;]*)&quot; text area$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_clear_text'><span class='object_link'><a href="../top-level-namespace.html#clear_text-instance_method" title="#clear_text (method)">clear_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//label[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::textarea|//textarea[@title=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_enter_text'><span class='object_link'><a href="../top-level-namespace.html#enter_text-instance_method" title="#enter_text (method)">enter_text</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>xpath</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_text'>text</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//label[contains(.,&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;)]/following-sibling::textarea|//textarea[@title=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition10-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should\s*((?:not)?)\s+see the "([^\"]*)" button on the page$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should%5Cs*((%3F:not)%3F)%5Cs%2Bsee+the+%22([%5E%5C%22]*)%22+button+on+the+page$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">lib/selenium-cucumber/assertion_steps.rb:9</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      <div class="docstring">
+  <div class="discussion">
+    
+<p>step to check if a button exists on a page</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">9
+10
+11</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should\s*((?:not)?)\s+see the &quot;([^\&quot;]*)&quot; button on the page$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_present'>present</span><span class='comma'>,</span> <span class='id identifier rubyid_access_name'>access_name</span><span class='op'>|</span>
+    <span class='id identifier rubyid_check_element_presence'><span class='object_link'><a href="../top-level-namespace.html#check_element_presence-instance_method" title="#check_element_presence (method)">check_element_presence</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>//*[contains(@class,&#39;btn&#39;)]/*[text()=&#39;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_access_name'>access_name</span><span class='embexpr_end'>}</span><span class='tstring_content'>&#39;]</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_present'>present</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+<div class="title">
+  
+     <a class="control" id="steptransform">[Collapse All]</a>
+     <div style="clear: right;"></div>
+   
+ 
+  
+    <a name="step_transforms">
+  
+  <div class="name">Step Transforms</div>
+</div>
+
+<div class="title">
+  
+ 
+  
+    <a name="undefined_steps">
+  
+  <div class="name">Undefined Steps</div>
+</div>
+
+<div class="transformer">
+  <div class="steps">
+  
+    <div class="steps">
+      <div class="undefined">No undefined steps</div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+      <div id="footer">
+  Generated on Wed Aug  2 11:09:18 2017 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.9 (ruby-2.3.0).
+</div>
+
+    </div>
+  </body>
+</html>

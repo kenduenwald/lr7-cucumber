@@ -1,10 +1,8 @@
-[![Gem Version](https://badge.fury.io/rb/selenium-cucumber.svg)](http://badge.fury.io/rb/selenium-cucumber)
-
-# Introduction
+## Introduction
 
 This project is designed to provide a base framework for writing automated tests in Cucumber in Ruby. This implementation uses the capybara gem which makes writing tests even easier. 
 
-The framework is divided into multiple layers that raises in technical level as you go lower. In the top level, testers will write in Cucumber in plain english -- as if they were writing a manual test. 
+The framework is divided into multiple layers that raises in technical level as you go lower. In the top level, testers will write in Cucumber in plain english as if they were writing a manual test. 
 
 The level below has step definitions written in ruby with a collection of convenience methods. XPaths here are designed to be generalized so that step definitions work per element. The top level stays easy so as long as you have a lean amount of clear step definitions.
 
@@ -46,3 +44,8 @@ Sublime Gherkin Auto Complete Plus
 https://github.com/austincrft/sublime-gherkin-auto-complete-plus
 
 This plugin only works with Sublime Text 3 and enables Sublime to auto complete step definitions when writing a test.
+
+YARDOC
+http://yardoc.org/
+
+This Ruby gem is used to generate the api docs for this repo. If you make change, just execute generate-docs.sh and open doc/_index.html . Navigating to doc/requirements/step_transformers.html#step_definitions will show you an index of all the step definitions.
