@@ -12,4 +12,4 @@ lib/selenium-cucumber/methods/assertion_methods.rb 0c732a2f21f69925fe14cf6614dc9
 lib/selenium-cucumber/methods/screenshot_methods.rb 63732d36afb35ef9ec5b418afbbdc860f90e36c0
 lib/selenium-cucumber/methods/click_elements_methods.rb b0087270e64dcb64cee6b36adeca13ac654a1188
 lib/selenium-cucumber/methods/javascript_handling_methods.rb 1903ead80365a6a442b18aeccdf677bde9544a2b
-README.md 9789527ca52d59a6725885197ee258c3fdfa2fd4
+README.md b126f52ff7ecf85739b0afd441a055a458020e30

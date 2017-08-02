@@ -1,6 +1,6 @@
 ## Introduction
 
-This project is designed to provide a base framework for writing automated tests in Cucumber in Ruby. This implementation uses the capybara gem which makes writing tests even easier. 
+This project is designed to provide a base framework for writing automated tests in Cucumber in Ruby. This implementation uses the capybara gem which makes writing tests even easier. The locator strategies are built around the [Liferay UI TagLib](https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/using-the-liferay-ui-taglib) so I encourage the use of the Liferay UI TagLib to make testing, or at least designing generalized xpaths, a lot easiser. The [API Documentation](https://docs.liferay.com/ce/portal/7.0-latest/taglibs/util-taglib/) can be found here.
 
 The framework is divided into multiple layers that raises in technical level as you go lower. In the top level, testers will write in Cucumber in plain english as if they were writing a manual test. 
 

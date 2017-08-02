@@ -66,7 +66,13 @@
 
 <p>This project is designed to provide a base framework for writing automated
 tests in Cucumber in Ruby. This implementation uses the capybara gem which
-makes writing tests even easier.</p>
+makes writing tests even easier. The locator strategies are built around
+the <a
+href="https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/using-the-liferay-ui-taglib">Liferay
+UI TagLib</a> so I encourage the use of the Liferay UI TagLib to make
+testing, or at least designing generalized xpaths, a lot easiser. The <a
+href="https://docs.liferay.com/ce/portal/7.0-latest/taglibs/util-taglib/">API
+Documentation</a> can be found here.</p>
 
 <p>The framework is divided into multiple layers that raises in technical
 level as you go lower. In the top level, testers will write in Cucumber in
@@ -137,7 +143,7 @@ an index of all the step definitions.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Wed Aug  2 11:09:18 2017 by
+  Generated on Wed Aug  2 11:14:23 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.0).
 </div>
