@@ -9,7 +9,3 @@ Feature: Default User Avatar
 		And I check the "Remember Me" checkbox
 		And I click the "Sign In" button
 		Then I should see the default avatar displaying "TT"
-		And I click the "Edit" link
-		And I enter "Test test test test test test" into the rich text editor
-		When I click the "Publish" button
-		Then I should see "Test test test test test test" in the wiki content
