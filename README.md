@@ -18,6 +18,8 @@ Ubuntu Installation
 
 Ubuntu 14 and above require additional dependencies.
 
+What this installs is Ruby 2.3, capybara and its dependencies, capybara-screenshot which is configured to take screenshots on failure, and chromedriver-helper which is one of the simplest ways to get automating on chrome.
+
 Install Ruby 2.3
 
 1. `sudo apt-add-repository ppa:brightbox/ruby-ng`
@@ -34,8 +36,25 @@ Install Capybara
 
 Install the rest of the stuff
 
-1. `sudo gem install cucumber chunky_png rspec appium_lib headless chromedriver-helper`
+1. `sudo gem install cucumber chunky_png rspec appium_lib headless chromedriver-helper capybara-screenshot`
 1. `sudo gem install selenium-webdriver -v 2.53.4`
+
+Windows Installation
+--------------------
+
+Install Ruby 2.3
+
+1. Download and Ruby 2.3 https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe
+1. Install and make sure you check the option to "Add Ruby executables to your PATH"
+1. Download and install the Ruby Development Kit using this guide https://github.com/oneclick/rubyinstaller/wiki/Development-Kit
+1. Confirm that you're running ruby 2.3.3 by running `ruby -v` in a command window
+1. Make sure you have gems installed by running `gem -v` on a command line
+
+Install everything else
+1. `gem install nokogiri`
+1. `gem install capybara -v 2.7.1`
+1. `gem install cucumber chunky_png rspec appium_lib headless chromedriver-helper capybara-screenshot`
+1. `gem install selenium-webdriver -v 2.53.4`
 
 
 Useful Tools
