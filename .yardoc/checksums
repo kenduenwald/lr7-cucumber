@@ -1,4 +1,4 @@
-features/test.feature c39fcadb0a0b84afeaa41c79a5117babc5d5f940
+features/test.feature 699a33c768ee76d15937793fce7038124c2de326
 lib/selenium-cucumber/version.rb abe4bb947f824bcf1458612e2c3989606e367206
 lib/selenium-cucumber/input_steps.rb 675099546c26dde0e86f99ccef6dcb416e00a473
 lib/selenium-cucumber/assertion_steps.rb 7ee1ca890dd19d2f327ee5f7f09eb43ff923c571
@@ -12,4 +12,4 @@ lib/selenium-cucumber/methods/assertion_methods.rb 0c732a2f21f69925fe14cf6614dc9
 lib/selenium-cucumber/methods/screenshot_methods.rb 63732d36afb35ef9ec5b418afbbdc860f90e36c0
 lib/selenium-cucumber/methods/click_elements_methods.rb b0087270e64dcb64cee6b36adeca13ac654a1188
 lib/selenium-cucumber/methods/javascript_handling_methods.rb 1903ead80365a6a442b18aeccdf677bde9544a2b
-README.md b126f52ff7ecf85739b0afd441a055a458020e30
+README.md 95d724a5486747357464fa92e1a7482fbc4ccfa2

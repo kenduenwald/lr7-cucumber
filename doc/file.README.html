@@ -96,6 +96,11 @@ done on the top and middle layers if done correctly.</p>
 
 <p>Ubuntu 14 and above require additional dependencies.</p>
 
+<p>What this installs is Ruby 2.3, capybara and its dependencies,
+capybara-screenshot which is configured to take screenshots on failure, and
+chromedriver-helper which is one of the simplest ways to get automating on
+chrome.</p>
+
 <p>Install Ruby 2.3</p>
 <ol><li>
 <p><code>sudo apt-add-repository ppa:brightbox/ruby-ng</code></p>
@@ -121,10 +126,35 @@ done on the top and middle layers if done correctly.</p>
 <p>Install the rest of the stuff</p>
 <ol><li>
 <p><code>sudo gem install cucumber chunky_png rspec appium_lib headless
-chromedriver-helper</code></p>
+chromedriver-helper capybara-screenshot</code></p>
 </li><li>
 <p><code>sudo gem install selenium-webdriver -v 2.53.4</code></p>
 </li></ol>
+
+<h2 id="label-Windows+Installation">Windows Installation</h2>
+
+<p>Install Ruby 2.3</p>
+<ol><li>
+<p>Download and Ruby 2.3 <a
+href="https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe">dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3-x64.exe</a></p>
+</li><li>
+<p>Install and make sure you check the option to “Add Ruby executables to your
+PATH”</p>
+</li><li>
+<p>Download and install the Ruby Development Kit using this guide <a
+href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">github.com/oneclick/rubyinstaller/wiki/Development-Kit</a></p>
+</li><li>
+<p>Confirm that you&#39;re running ruby 2.3.3 by running <code>ruby -v</code>
+in a command window</p>
+</li><li>
+<p>Make sure you have gems installed by running <code>gem -v</code> on a
+command line</p>
+</li></ol>
+
+<p>Install everything else 1. <code>gem install nokogiri</code> 1. <code>gem
+install capybara -v 2.7.1</code> 1. <code>gem install cucumber chunky_png
+rspec appium_lib headless chromedriver-helper capybara-screenshot</code> 1.
+<code>gem install selenium-webdriver -v 2.53.4</code></p>
 
 <h2 id="label-Useful+Tools">Useful Tools</h2>
 
@@ -143,7 +173,7 @@ an index of all the step definitions.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Wed Aug  2 11:14:23 2017 by
+  Generated on Tue Aug 29 17:16:27 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.3.0).
 </div>
